@@ -6,7 +6,7 @@ const { connection } = require("./src/db");
 require("dotenv").config();
 
 //? Utilities
-const port = process.env.PORT || 3001
+const port = 3001;
 
 (startServer = async () => {
   try {
