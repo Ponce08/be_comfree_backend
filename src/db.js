@@ -7,7 +7,7 @@ require("dotenv").config();
 //? SQL Connection
 const { DB_USER, DB_PASSWORD, DB_HOST, DB } = process.env;
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB}`,
+  `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB}`,
   { logging: false }
 );
 
